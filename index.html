@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEEE DIU Student Branch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #0f3d2e, #14532d, #7f1d1d);
+      background-size: 300% 300%;
+      animation: bgMove 10s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 30px 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+      border-radius: 22px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 25px rgba(34,197,94,0.8), 0 0 35px rgba(220,38,38,0.6);
+      overflow: hidden;
+      animation: pulseGlow 2.8s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 20px rgba(34,197,94,0.6), 0 0 30px rgba(220,38,38,0.4); }
+      50% { box-shadow: 0 0 35px rgba(34,197,94,1), 0 0 45px rgba(220,38,38,0.8); }
+      100% { box-shadow: 0 0 20px rgba(34,197,94,0.6), 0 0 30px rgba(220,38,38,0.4); }
+    }
+
+    .logo img {
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 500;
+      background: linear-gradient(135deg, #22c55e, #dc2626);
+      background-size: 200% 200%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      transition: all 0.35s ease;
+      animation: btnFlow 4s ease infinite;
+    }
+
+    @keyframes btnFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .links a:hover {
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 14px 35px rgba(34,197,94,0.6), 0 10px 25px rgba(220,38,38,0.6);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 520px;
+        padding: 40px 35px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .links a {
+        font-size: 16px;
+        padding: 16px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="DIU IEEE SB SIGHT Logo" />
+    </div>
+    <h1>IEEE DIU Student Branch</h1>
+    <!-- <h2>Innovate for Humanity</h2> -->
+
+    <div class="links">
+      <a href="https://www.facebook.com/diuieee" target="_blank">🌐 Facebook Page</a>
+      <a href="https://www.ieee.org/" target="_blank">💻 Official Website</a>
+      <a href="mailto:ieee@diu.edu.bd">📧 Email Us</a>
+      <a href="https://www.linkedin.com/" target="_blank">🔗 LinkedIn</a>
+      <a href="#" target="_blank">✨ More Links</a>
+    </div>
+
+    <footer>
+      © 2026 DIU IEEE SB SIGHT
+    </footer>
+  </div>
+</body>
+</html>
